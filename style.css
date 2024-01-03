@@ -11,16 +11,62 @@ body, * {
 .nav-bar {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     border: 1px black solid;
+    align-items: center;
 }
 
 .nav-bar a {
     text-decoration: none;
-    font-size: larger;
+    font-size: xx-large;
     color: blue;
 }
 
 .nav-bar a:visited {
     color: blue;
+}
+
+.home-wood {
+    width: 50vw;
+    text-align: center;
+    border-right: 1px solid black;
+}
+
+.home-metal {
+    width: 50vw;
+    text-align: center;
+}
+
+.home-popular {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.home-popular img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.home-popular img:hover {
+    opacity: 0.5;
+}
+
+.home-showcase {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.home-showcase img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.home-showcase img:hover {
+    opacity: 0.5;
 }
