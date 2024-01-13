@@ -4,6 +4,7 @@ body, * {
 
 .header-title {
     text-align: center;
+    font-family: cursive;
     margin-bottom: 30px;
     margin-top: 15px;
 }
@@ -13,6 +14,7 @@ body, * {
     flex-direction: row;
     border: 1px black solid;
     align-items: center;
+    margin-bottom: 80px;
 }
 
 .nav-bar a {
@@ -40,6 +42,7 @@ body, * {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .home-popular img {
@@ -56,8 +59,7 @@ body, * {
 .home-showcase {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .home-showcase img {
@@ -70,3 +72,11 @@ body, * {
 .home-showcase img:hover {
     opacity: 0.5;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
