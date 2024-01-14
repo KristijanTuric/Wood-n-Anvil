@@ -1,79 +1,82 @@
-body, * {
+@font-face {
+    font-family: NorseBold;
+    src: url("res/fonts/Norse-Bold.otf");
+}
+
+* {
     margin: 0;
 }
 
-.header-title {
-    text-align: center;
-    font-family: cursive;
-    margin-bottom: 30px;
-    margin-top: 15px;
+html, body {
+    height: 100%;
+    font-family: NorseBold;
 }
 
-.nav-bar {
+button:hover {
+    background-color: lightblue;
+}
+
+.header h1 {
+    font-family: NorseBold;
+    font-size: 55px;
+}
+
+.header {
+    height: 15vh;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    padding: 0 50px 0 80px;
     display: flex;
-    flex-direction: row;
-    border: 1px black solid;
     align-items: center;
-    margin-bottom: 80px;
+    justify-content: space-between;
 }
 
-.nav-bar a {
-    text-decoration: none;
+.main-content {
+    background: rgba(0, 0, 0, 0.12);
+    min-height: 100%;
+    padding: 30px 20px 0 20px;
+}
+
+.main-content h2 {
+    margin-bottom: 15px;
+    margin-left: 20px;
     font-size: xx-large;
-    color: blue;
 }
 
-.nav-bar a:visited {
-    color: blue;
+#wood-btn, #metal-btn {
+    outline: none;
+    border: none;
+    width: 300px;
+    font-size: x-large;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    margin: 15px;
+    font-family: NorseBold;
+    font-size: xx-large;
 }
 
-.home-wood {
-    width: 50vw;
-    text-align: center;
-    border-right: 1px solid black;
-}
-
-.home-metal {
-    width: 50vw;
-    text-align: center;
-}
-
-.home-popular {
+.home-popular, .home-showcase {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 30px;
 }
 
-.home-popular img {
-    width: 150px;
-    height: 150px;
+.home-popular img, .home-showcase img {
+    width: 250px;
+    height: 250px;
     border-radius: 15px;
-    margin: 10px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 }
 
-.home-popular img:hover {
-    opacity: 0.5;
-}
-
-.home-showcase {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.home-showcase img {
-    width: 150px;
-    height: 150px;
-    border-radius: 15px;
-    margin: 10px;
-}
-
-.home-showcase img:hover {
-    opacity: 0.5;
+.home-popular img:hover, .home-showcase img:hover {
+    opacity: 0.8;
 }
 
 .footer {
+    padding: 5px;
+    background-color: black;
+    color: white;
     position: fixed;
     left: 0;
     bottom: 0;
