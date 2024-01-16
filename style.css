@@ -31,7 +31,16 @@ button:hover {
 }
 
 .main-content {
-    background: rgba(0, 0, 0, 0.12);
+    
+    color: white;
+    background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+        ),
+        /* bottom, image */
+        url("https://images.unsplash.com/photo-1509460364839-ef5b594e0ee8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
     min-height: 100%;
     padding: 30px 20px 0 20px;
 }
@@ -82,4 +91,5 @@ button:hover {
     bottom: 0;
     width: 100%;
     text-align: center;
+    border-top: 1px white solid;
   }
