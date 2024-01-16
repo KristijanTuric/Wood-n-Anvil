@@ -1,38 +1,87 @@
-body, * {
+@font-face {
+    font-family: NorseBold;
+    src: url("../res/fonts/Norse-Bold.otf");
+}
+
+* {
     margin: 0;
 }
 
-h1 {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-align: center;
+html, body {
+    height: 100%;
+    font-family: NorseBold;
+    color: white;
 }
 
-.nav-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    border: 1px black solid;
+button:hover {
+    background-color: lightblue;
 }
 
-.nav-bar a {
+.header h1 a{
+    font-size: 55px;
     text-decoration: none;
-    font-size: larger;
-    color: blue;
+    color: black;
 }
 
-.nav-bar a:visited {
-    color: blue;
+.header {
+    height: 15vh;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    padding: 0 50px 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#metal-btn {
+    outline: none;
+    border: none;
+    width: 300px;
+    font-size: x-large;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    margin: 15px;
+    font-family: NorseBold;
+    font-size: xx-large;
 }
 
 .container {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        /* bottom, image */
+        url("https://www.pcc.edu/community/wp-content/uploads/sites/36/2019/04/GettyImages-510385414.jpg");
+    min-height: 100%;
+    padding-top: 15px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
 }
+
+.container h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.container h3 {
+    font-size: 22px;
+}
+
+
 
 .wood-tables, .wood-chair, .wood-bench {
     text-align: center;
-    margin-bottom: 30px;
 }
 
 .tables-img, .chair-img, .bench-img {
@@ -45,4 +94,9 @@ h1 {
     width: 200px;
     height: 200px;
     border-radius: 10px;
+    box-shadow: 0 0 4px 0 rgb(255, 255, 255), 0 2px 4px 0 rgb(255, 255, 255);
+}
+
+.tables-img img:hover, .chair-img img:hover, .bench-img img:hover { 
+    opacity: 0.8;
 }
