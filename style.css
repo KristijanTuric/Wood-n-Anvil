@@ -12,7 +12,23 @@ html, body {
     font-family: NorseBold;
 }
 
+.header-login {
+    background-color: #BB7E5D;
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+    padding: 5px;
+}
 
+.header-login button {
+    border: none;
+    background: none;
+    border-radius: 15px;
+}
+
+.header-login button:hover {
+    background-color: #0CA4A5;
+}
 
 .header h1 {
     font-family: NorseBold;
