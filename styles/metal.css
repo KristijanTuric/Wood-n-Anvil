@@ -78,6 +78,7 @@ button:hover {
     flex-direction: column;
     gap: 50px;
     justify-content: center;
+
 }
 
 .container h1 {
@@ -119,4 +120,18 @@ button:hover {
 
 .swords-img img:hover, .labels-img img:hover, .stamp-img img:hover, .tools-img img:hover {
     opacity: 0.8;
+}
+
+.click-zoom input[type=checkbox] {
+    display: none
+  }
+  
+.click-zoom img {
+    transition: transform 0.25s ease;
+    cursor: zoom-in
+}
+  
+.click-zoom input[type=checkbox]:checked~img {
+    transform: scale(2);
+    cursor: zoom-out
 }

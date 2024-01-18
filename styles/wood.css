@@ -118,3 +118,17 @@ button:hover {
 .tables-img img:hover, .chair-img img:hover, .bench-img img:hover { 
     opacity: 0.8;
 }
+
+.click-zoom input[type=checkbox] {
+    display: none
+  }
+  
+.click-zoom img {
+    transition: transform 0.25s ease;
+    cursor: zoom-in
+}
+  
+.click-zoom input[type=checkbox]:checked~img {
+    transform: scale(2);
+    cursor: zoom-out
+}
