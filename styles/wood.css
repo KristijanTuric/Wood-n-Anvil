@@ -25,11 +25,22 @@ button:hover {
 
 .header {
     height: 15vh;
+    background-color: #DBB68F;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
     padding: 0 50px 0 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.header img {
+    height: 50px;
+    width: 50px;
+}
+
+.header-logo {
+    display: flex;
+    gap: 15px;
 }
 
 #metal-btn {
@@ -43,6 +54,11 @@ button:hover {
     margin: 15px;
     font-family: NorseBold;
     font-size: xx-large;
+    background-color: #BB7E5D;
+}
+
+#metal-btn:hover {
+    background-color: #0CA4A5;
 }
 
 .container {
@@ -61,6 +77,8 @@ button:hover {
     flex-direction: column;
     gap: 50px;
     justify-content: center;
+
+    padding-bottom: 20px;
 }
 
 .container h1 {
