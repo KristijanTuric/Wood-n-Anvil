@@ -11,9 +11,9 @@
 
     <!-- Log In -->
     <div class="header-login">
-        <button>Login</button>
+        <button id="login-btn">Login</button>
         <p>/</p>
-        <button>Register</button>
+        <button id="register-btn">Register</button>
     </div>
 
     <!-- Header and navigation -->
@@ -33,11 +33,7 @@
     <div class="main-content">
         <h2>Most popular categories</h2>
         <div class="home-popular">
-            <div>
-                <a href="">
-                    <img src="https://www.owenbush.co.uk/wp-content/uploads/Studio-Session-1857.jpg">
-                </a>
-            </div>
+            <div><a href=""><img src="https://www.owenbush.co.uk/wp-content/uploads/Studio-Session-1857.jpg"></a></div>
             <div><a href=""><img src="https://lilycraft.com.au/cdn/shop/files/DSC1422.jpg?v=1696494763&width=2500"></a></div>
             <div><a href=""><img src="https://i.pinimg.com/originals/8a/b2/d4/8ab2d4086697b6c54f812433be999edc.png"></a></div>
             <div><a href=""><img src="https://i.pinimg.com/originals/0e/7c/98/0e7c98ce548ab13bfdd42e1dea12f94a.jpg"></a></div>
@@ -46,11 +42,7 @@
 
         <h2>Product showcase</h2>
         <div class="home-showcase">
-            <div class="container">
-                <a href="">
-                    <img src="https://dragonsbreathforge.com/wp-content/uploads/2019/11/Lundell_170920-web.jpg">
-                </a>
-            </div>
+            <div><a href=""><img src="https://dragonsbreathforge.com/wp-content/uploads/2019/11/Lundell_170920-web.jpg"></a></div>
             <div><a href=""><img src="https://dragonsbreathforge.com/wp-content/uploads/2019/11/Lundell_181028-wweb.jpg"></a></div>
             <div><a href=""><img src="https://images.custommade.com/GQDPm3sCRJPF8wrki6AXrR11k-0=/custommade-photosets/9ab5f6110c33d0f_il_570xn419976984_hyh4.jpg"></a></div>
             <div><a href=""><img src="https://images.custommade.com/DxAT7p0cOvar297xnpVaTnYWvHQ=/custommade-photosets/649d6baa7b60daa_img_8434.jpeg"></a></div>
@@ -60,7 +52,35 @@
 
     <!-- Footer -->
     <div class="footer">
+        <p class="footer-contact">For any custom orders contact us at: <a href="">totallyrealmail@yahoo.com</a> Thank you!</p>
         <p><a href="https://github.com/KristijanTuric">Made by Kristijan T</a></p>
     </div>
+
+    <!-- Login/Register Dialog -->
+    <dialog id="loginDialog">
+        <form autocomplete="off">
+            <div class="dialogInput">
+                <label>Email</label>
+                <input id="emailInput" type="text" placeholder="john.miller@gmail.com">
+            </div>            
+
+            <div class="dialogInput">
+                <label>Password</label>
+                <input id="passwordInput" type="text" placeholder="">
+            </div>
+
+            <div class="dialogButtons">
+                <!-- 
+                    Making the Confirm button default when pressing Enter by 
+                    settings other buttons type to "button" and the Confirm 
+                    button to type "Submit"
+                -->
+                <button id="cancelBtn" type="button" value="cancel" formmethod="dialog">Cancel</button>
+                <button id="confirmBtn" value="default" type="submit">Confirm</button>
+            </div>
+        </form>
+    </dialog>
+
+    <script src="script.js"></script>
 </body>
 </html>
