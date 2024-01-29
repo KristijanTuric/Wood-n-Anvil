@@ -15,15 +15,18 @@ html, body {
 /*#region Header Login*/
 
 .header-login {
-    background-color: #BB7E5D;
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: end;
     padding-right: 30px;
     padding: 5px;
+    border-bottom: 1px white solid;
 }
 
 .header-login button {
     border: none;
+    color: white;
     background: none;
     border-radius: 15px;
 }
